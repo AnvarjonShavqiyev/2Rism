@@ -3,7 +3,10 @@ footer{
     height: 404px;
     width: 100%;   
 }
-
+.footer__logoes{
+    display: flex;
+    gap: 32px;
+}
 .footer__list{
     list-style-type: none;
     display: flex;
