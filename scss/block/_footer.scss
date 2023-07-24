@@ -1,0 +1,76 @@
+footer{
+    background-color: #F9F9F9;
+    height: 404px;
+    width: 100%;   
+}
+
+.footer__list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 404px;
+}
+.footer__item:first-child{
+    .footer__text{
+        margin-top: 16px;
+        margin-bottom: 32px;
+        @include font($f-color:#979797,$f-size:14px,$f-height:20px,$f-weight:400);
+        width: 354px;
+    }
+}
+.footer__menu{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .menu__item{
+        a{
+            text-decoration: none;
+            @include font($f-color:#979797,$f-size:14px,$f-height:20px,$f-weight:400);
+        }
+    }
+}
+.menu__item:first-child{
+    a{
+        text-decoration: none;
+        margin-bottom: 8px;
+        @include font($f-color:#161414,$f-size:18px,$f-height:28px,$f-weight:500);
+    }
+}
+.footer__item:last-child{
+    .last__title{
+        @include font($f-color:#161414,$f-size:18px,$f-height:28px,$f-weight:500);
+        width: 388px;
+        margin-bottom: 20px;
+    }
+    .input__wrapper{
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        position: relative;
+        .email__img{
+            position: absolute;
+            left: 16px;
+        }
+        .footer__btn{
+            border: none;
+            padding: 24px 24px;
+            background-color: #7B61FF;
+            border-radius: 12px;
+        }
+        .email__inp{
+            width: 300px;
+            height: 72px;
+            border-radius: 12px;
+            background-color: #FFF;
+            border: none;
+            text-indent: 56px;
+        }
+        .email__inp::placeholder{
+            @include font($f-color:#979797,$f-size:14px,$f-height:20px,$f-weight:400);
+        }
+    }
+
+}

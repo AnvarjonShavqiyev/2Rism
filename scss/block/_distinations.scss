@@ -1,0 +1,23 @@
+h2{
+    @include font($f-color:#161414,$f-size:32px, $f-weight:600,$f-height:48px);
+    margin-bottom: 64px;
+}
+.distinations__list{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 232px;
+    gap: 32px;
+    margin-bottom: 120px;
+    .distinations__item{
+        img{
+            margin-bottom: 8px;
+        }
+        .dis__title{
+            @include font($f-color:#161414,$f-size:16px, $f-weight:500,$f-height:24px);
+        }
+       .dis__text{
+            @include font($f-color:#979797,$f-size:14px, $f-weight:500,$f-height:20px);       
+       }
+    }
+}

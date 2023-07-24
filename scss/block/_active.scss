@@ -1,0 +1,14 @@
+.active__list{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4,316px);
+    grid-template-rows: 420px;
+    gap: 32px;
+    margin-bottom: 120px;
+    .active__item{
+        .active__text{
+            @include font($f-color:#161414,$f-size:16px,$f-weight:500,$f-height:24px);
+            margin-top: 16px;
+        }
+    }
+}
